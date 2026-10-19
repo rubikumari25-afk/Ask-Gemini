@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ask Gemini | AI Workspace</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">G</div>
+
+                <div>
+                    <h2>Ask Gemini</h2>
+                    <p>AI WORKSPACE</p>
+                </div>
+            </div>
+
+            <div class="sidebar-divider"></div>
+
+            <p class="sidebar-label">YOUR WORKSPACE</p>
+
+            <button class="sidebar-item active" id="new-chat-btn" type="button">
+              <span class="sidebar-icon">✦</span>
+              <span>New conversation</span>
+            </button>
+
+            <div class="sidebar-info">
+                <div class="info-icon">i</div>
+
+                <div>
+                    <h3>Powered by AI</h3>
+                    <p>Ask questions, explore ideas and learn something new.</p>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <span class="status-dot"></span>
+                AI assistant ready
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <p class="breadcrumb">Workspace / <span>Ask Gemini</span></p>
+                </div>
+
+                <div class="version-badge">
+                    <span class="version-dot"></span>
+                    Gemini AI
+                </div>
+            </header>
+
+
+            <section class="workspace">
+
+                <div class="hero">
+
+                    <div class="hero-badge">
+                        <span>✦</span>
+                        YOUR AI ASSISTANT
+                    </div>
+
+                    <h1>
+                        Ideas start with<br>
+                        <span>a good question.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Ask anything. Understand complex topics.
+                        Get clear, simple answers to help you learn.
+                    </p>
+
+                </div>
+
+
+                <!-- Question Input -->
+                <section class="question-card">
+
+                    <label for="question" class="input-label">
+                        WHAT WOULD YOU LIKE TO KNOW?
+                    </label>
+
+                    <textarea
+                        id="question"
+                        placeholder="Ask a question, explore a concept, or learn something new..."
+                        rows="3"
+                    ></textarea>
+
+                    <div class="input-footer">
+
+                        <p class="input-hint">
+                            <span>↳</span>
+                            Clear questions lead to better answers.
+                        </p>
+
+                        <button id="submit-btn" type="button">
+                            <span>Ask Gemini</span>
+                            <span class="button-arrow">→</span>
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Answer Section -->
+                <section class="answer-section">
+
+                    <div class="answer-heading">
+                        <div class="answer-icon">✦</div>
+
+                        <div>
+                            <h2>Response</h2>
+                            <p>Your AI-generated answer will appear here.</p>
+                        </div>
+
+                        <span class="answer-tag">AI OUTPUT</span>
+                    </div>
+
+                    <div id="answer" class="answer-content" aria-live="polite">
+                        <div class="empty-state">
+                            <div class="empty-icon">✧</div>
+
+                            <h3>Ready when you are</h3>
+
+                            <p>
+                                Enter your question above to start
+                                a conversation with Gemini.
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <footer class="page-footer">
+                    <p>ASK GEMINI <span>•</span> AI-POWERED LEARNING</p>
+                    <p>AI-generated answers may need verification.</p>
+                </footer>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
